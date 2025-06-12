@@ -1,4 +1,32 @@
+@font-face {
+  font-family: "Inter_18pt-Regular";
+  src: url("./assets/fonts/Inter_18pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter_18pt-Medium";
+  src: url("./assets/fonts/Inter_18pt-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter_18pt-SemiBold";
+  src: url("./assets/fonts/Inter_18pt-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Inter_18pt-Bold";
+  src: url("./assets/fonts/Inter_18pt-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
 :root {
+  --ff-regular: "Inter_18pt-Regular";
+  --ff-medium: "Inter_18pt-Medium";
+  --ff-semibold: "Inter_18pt-SemiBold";
+  --ff-bold: "Inter_18pt-Bold";
   --primary_color: #ffbb00;
   --border_color: #f2b304;
   --primary_text_color: #263238;
@@ -6,8 +34,11 @@
   --tertiary_text_color: #dddddd;
   --bg_color: #222e34;
   --box_shadow: 4px 4px 14px 0px #0000000f;
+  --section_heading_size: 36px;
 }
 
 body {
   margin: 0;
+  font-family: var(--ff-medium);
+  color: var(--primary_text_color);
 }

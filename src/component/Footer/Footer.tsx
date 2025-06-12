@@ -6,6 +6,7 @@ const Footer = () => {
       sx={{
         background: "var(--bg_color)",
         color: "var(--tertiary_text_color)",
+        fontFamily: "var(--ff-regular)",
         fontSize: "14px",
         lineHeight: "20px",
         display: "flex",

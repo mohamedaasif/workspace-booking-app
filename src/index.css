@@ -29,12 +29,22 @@
   --ff-bold: "Inter_18pt-Bold";
   --primary_color: #ffbb00;
   --border_color: #f2b304;
+  --seconday_border_color: #eee7e7;
+  --tertiary_border_color: #ffc422;
   --primary_text_color: #263238;
-  --secondary_text_color: #605f5f;
+  --secondary_text_color: #65624c;
+  /* --secondary_text_color: #605f5f; */
   --tertiary_text_color: #dddddd;
   --bg_color: #222e34;
   --box_shadow: 4px 4px 14px 0px #0000000f;
-  --section_heading_size: 36px;
+  --section_heading_web_size: 36px;
+  --section_heading_mweb_size: 24px;
+  --primary_btn_color: #ffcf4b;
+  --secondary_btn_color: #f9f9f9;
+  --text_light: #fffdf7;
+  --border_light_gray: #eee7e7cc;
+  --box_shadow_low: 0px 1.08px 8.63px 0px #0000000f;
+  --text_muted: #26323880;
 }
 
 body {

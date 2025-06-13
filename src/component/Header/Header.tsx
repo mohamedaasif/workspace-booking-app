@@ -10,7 +10,7 @@ const Header = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        px: { xs: "20px", sm: "40px", md: "120px" },
+        px: { xs: "20px", md: "40px", lg: "120px" },
       }}
     >
       <Box component="img" src={logo} alt="headerLogo" />

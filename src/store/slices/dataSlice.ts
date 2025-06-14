@@ -2,13 +2,13 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 type DataState = {
   items: any[];
-  status: "idle" | "loading" | "succeeded" | "failed";
+  isLoading: boolean;
   error: string | null | undefined;
 };
 
 const initialState: DataState = {
   items: [],
-  status: "idle",
+  isLoading: false,
   error: null,
 };
 
@@ -25,14 +25,14 @@ const dataSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchData.pending, (state) => {
-        state.status = "loading";
+        state.isLoading = true;
       })
       .addCase(fetchData.fulfilled, (state, action) => {
-        state.status = "succeeded";
+        state.isLoading = false;
         state.items = action.payload;
       })
       .addCase(fetchData.rejected, (state, action) => {
-        state.status = "failed";
+        state.isLoading = false;
         state.error = action.error.message;
       });
   },

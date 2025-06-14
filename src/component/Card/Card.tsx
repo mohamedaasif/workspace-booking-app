@@ -111,7 +111,7 @@ const Card = (props: cardData) => {
       </Box>
       <Box
         component={"img"}
-        src={`/public/${data?.images[0]}`}
+        src={`${import.meta.env.BASE_URL}${data?.images[0]}`}
         alt="arrow"
         width={"100%"}
         height={"202px"}

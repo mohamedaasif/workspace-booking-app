@@ -41,8 +41,8 @@ const Banner = () => {
     <Box>
       {/* Desktop and Tablet */}
       <Box sx={{ display: { xs: "none", sm: "flex" }, flexDirection: "row" }}>
-        <Box sx={{ position: "relative", width: "100%" }}>
-          <Box component="img" src={bannerWeb} alt="bannerWeb" width="100%" />
+        <Box sx={{ position: "relative" }}>
+          <Box component="img" src={bannerWeb} alt="bannerWeb" />
           <BannerText fontSize={{ sm: "38px", lg: "58px" }} />
         </Box>
         <Box

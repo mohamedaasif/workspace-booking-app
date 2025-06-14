@@ -22,7 +22,7 @@ const DownloadApp = () => {
       </Typography>
       <Box
         sx={{
-          width: "100%",
+          width: "auto",
           minHeight: { xs: "180px", md: "220px" },
           borderRadius: "8px",
           boxShadow: "var(--box_shadow_low)",

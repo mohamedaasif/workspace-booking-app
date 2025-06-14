@@ -48,7 +48,7 @@ const Card = (props: cardData) => {
     <Box
       key={data?.id}
       sx={{
-        width: { xs: "100%", sm: "370px" },
+        width: { xs: "auto", sm: "370px" },
         height: { xs: "auto", sm: "384px" },
         borderRadius: "8px",
         border: "1.08px solid var(--border_light_gray)",
@@ -61,7 +61,7 @@ const Card = (props: cardData) => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          gap: "56px",
+          gap: { xs: "46px", sm: "56px" },
           mb: "16px",
         }}
       >

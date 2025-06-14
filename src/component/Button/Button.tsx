@@ -71,7 +71,7 @@ const Button = (props: ButtonProps) => {
               fontFamily: "var(--ff-semibold)",
               color: "var(--primary_text_color)",
             }}
-          >{`\u20B9 ${price}`}</Typography>
+          >{`\u20B9${price}`}</Typography>
           <Typography
             component="span"
             sx={{
@@ -80,7 +80,7 @@ const Button = (props: ButtonProps) => {
               color: "var(--secondary_text_color)",
             }}
           >
-            {isBulkPass ? "/ 10 Days" : "/ Day"}
+            {isBulkPass ? "/10 Days" : "/Day"}
           </Typography>
         </Box>
       </Box>

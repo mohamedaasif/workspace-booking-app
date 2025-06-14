@@ -15,7 +15,7 @@ const BannerText = ({
       position: align === "center" ? "static" : "absolute",
       top: align === "center" ? "auto" : "50%",
       transform: align === "center" ? "none" : "translateY(-50%)",
-      left: align === "center" ? "auto" : "12%",
+      left: align === "center" ? "auto" : { sm: "8%", md: "12%" },
       fontFamily: "var(--ff-bold)",
       fontSize,
       textAlign: align,
@@ -42,7 +42,7 @@ const Banner = () => {
       {/* Desktop and Tablet */}
       <Box sx={{ display: { xs: "none", sm: "flex" }, flexDirection: "row" }}>
         <Box sx={{ position: "relative" }}>
-          <Box component="img" src={bannerWeb} alt="bannerWeb" />
+          <Box component="img" src={bannerWeb} alt="bannerWeb" width="100%" />
           <BannerText fontSize={{ sm: "38px", lg: "58px" }} />
         </Box>
         <Box

@@ -6,6 +6,7 @@ const ChooseUs = () => {
     <Box
       sx={{
         mb: { xs: "50px", md: "120px" },
+        mt: { xs: "50px", md: "36px" },
       }}
     >
       <Typography

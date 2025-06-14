@@ -24,9 +24,14 @@ const ChooseUs = () => {
       </Typography>
       <Box
         sx={{
-          display: "flex",
-          flexWrap: "wrap",
+          display: "grid",
           gap: "12px",
+          gridTemplateColumns: {
+            xs: "repeat(2, 1fr)",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(3, 1fr)",
+            lg: "repeat(4, 1fr)",
+          },
         }}
       >
         {amenities?.map((item: any) => (
@@ -36,13 +41,13 @@ const ChooseUs = () => {
               display: "flex",
               gap: "16px",
               alignItems: "center",
-              paddingLeft: { sm: "24px" },
-              justifyContent: { xs: "center", sm: "left" },
+              padding: "16px",
+              justifyContent: { xs: "center", sm: "flex-start" },
               flexDirection: { xs: "column", sm: "row" },
-              width: { xs: "150px", sm: "280px" },
-              height: "80px",
               boxShadow: "var(--box_shadow_mid)",
               borderRadius: "6px",
+              minHeight: "80px",
+              boxSizing: "border-box",
             }}
           >
             <Box component="img" src={item.img} alt={item.name} width="32px" />
@@ -50,6 +55,7 @@ const ChooseUs = () => {
               sx={{
                 fontFamily: "var(--ff-medium)",
                 fontSize: { xs: "14px", sm: "18px" },
+                textAlign: { xs: "center", sm: "left" },
               }}
             >
               {item.name}

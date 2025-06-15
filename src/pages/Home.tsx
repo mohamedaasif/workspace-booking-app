@@ -6,7 +6,7 @@ import Banner from "../component/Banner/Banner";
 
 const Home = () => {
   return (
-    <>
+    <Box sx={{ mt: { xs: "72px", md: "90px" } }}>
       <Banner />
       <Box
         sx={{
@@ -17,7 +17,7 @@ const Home = () => {
         <SpaceOverview />
         <DownloadApp />
       </Box>
-    </>
+    </Box>
   );
 };
 

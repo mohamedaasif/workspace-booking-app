@@ -11,6 +11,12 @@ const Header = () => {
         alignItems: "center",
         justifyContent: "space-between",
         px: { xs: "20px", md: "40px", lg: "120px" },
+        position: "fixed",
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 1000,
+        backgroundColor: "#fff",
       }}
     >
       <Box component="img" src={logo} alt="headerLogo" />

@@ -48,8 +48,8 @@ const Card = (props: cardData) => {
     <Box
       key={data?.id}
       sx={{
-        width: { xs: "auto", sm: "350px", lg: "370px" },
-        height: { xs: "auto", sm: "auto", lg: "384px" },
+        width: { xs: "auto", sm: "350px", xl: "370px" },
+        height: { xs: "auto", sm: "auto", xl: "384px" },
         borderRadius: "8px",
         border: "1.08px solid var(--border_light_gray)",
         boxShadow: "var(--box_shadow_low)",

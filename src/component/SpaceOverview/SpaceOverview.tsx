@@ -63,7 +63,7 @@ const SpaceOverview = () => {
       <Box
         sx={{
           display: "flex",
-          gap: { xs: "16px", lg: "45px" },
+          gap: { xs: "16px", md: "16px", xl: "40px" },
           flexDirection: { xs: "column", sm: "row" },
           flexWrap: "wrap",
         }}

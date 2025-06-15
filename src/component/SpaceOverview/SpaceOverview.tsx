@@ -39,7 +39,7 @@ const SpaceOverview = () => {
     };
 
     fetchLocation();
-  }, [dispatch]);
+  }, []);
 
   return (
     <Box
